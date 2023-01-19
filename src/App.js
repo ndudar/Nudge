@@ -1,13 +1,13 @@
 // import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import StartLesson from "./features/StartLesson/StartLesson";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Oh hi there.
-        </p>
-      </header>
+    <div>
+        <StartLesson />
     </div>
   );
 }
