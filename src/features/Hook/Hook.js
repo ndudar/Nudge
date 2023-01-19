@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 
-function StartLesson() {
+function Hook() {
   const styles = {
     display: "flex",
     alignItems: "center",
@@ -18,10 +18,10 @@ function StartLesson() {
 
   return (
     <div style={styles}>
-      <h1>Pocket Coach</h1>
-      <Button style={buttonStyles} size="lg" href="/hook">START LESSON</Button>
+      <h1>HOOK</h1>
+      <Button style={buttonStyles} size="lg">SKIP TO NEXT</Button>
     </div>
   );
 }
 
-export default StartLesson;
+export default Hook;

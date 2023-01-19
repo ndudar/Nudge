@@ -1,13 +1,13 @@
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import StartLesson from "./features/StartLesson/StartLesson";
+import AppRoutes from './features/AppRoutes/AppRoutes';
 
 
 function App() {
   return (
     <div>
-        <StartLesson />
+        <AppRoutes />
     </div>
   );
 }
