@@ -7,7 +7,7 @@ const AppRoutes = () => {
     <div>
       <Routes>
         <Route path="/" element={<StartLesson/>}></Route>
-        <Route path="/hook" element={<Hook />}></Route>
+        <Route path="/hook" element={<Hook/>}></Route>
       </Routes>
     </div>
   )

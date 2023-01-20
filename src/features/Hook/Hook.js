@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import InfoToast from "../InfoToast/InfoToast";
+import Timer from "../Timer/Timer";
 
 function Hook() {
   const styles = {
@@ -30,6 +31,8 @@ function Hook() {
     <div style={styles}>
       <h1>HOOK</h1>
       <InfoToast />
+      <div style={split}></div>
+      <Timer targetTimeMins={3}/>
       <div style={split}></div>
       <Button style={nextButtonStyles} size="lg">SKIP TO NEXT</Button>
       <div style={split}></div>
