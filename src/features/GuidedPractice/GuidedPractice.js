@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import InfoToast from "../InfoToast/InfoToast";
 import Timer from "../Timer/Timer";
+import DipStick from "../DipStick/DipStick";
 
 const GuidedPractice = () => {
   const styles = {
@@ -34,6 +35,8 @@ const GuidedPractice = () => {
       <InfoToast />
       <div style={split}></div>
       <Timer targetTimeMins={10}/>
+      <p style={{ marginBottom: '0'}}>Check for Understanding</p>
+      <DipStick />
       <div style={split}></div>
       <Button style={nextButtonStyles} size="lg" href="/independent-practice">SKIP TO NEXT</Button>
       <div style={split}></div>

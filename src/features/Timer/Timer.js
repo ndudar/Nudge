@@ -14,7 +14,7 @@ const ExpiredNotice = () => {
 
   return (
     <div style={blockStyle}>
-      <span>Expired!!!</span>
+      <span>Time's Up!!!</span>
       <p>Move on to next lesson component.</p>
     </div>
   );
