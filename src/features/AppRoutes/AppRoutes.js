@@ -6,6 +6,7 @@ import Model from "../Model/Model";
 import GuidedPractice from "../GuidedPractice/GuidedPractice";
 import IndependentPractice from "../IndependentPractice/IndependentPractice";
 import MidWorkshop from "../MidWorkshop/MidWorkshop";
+import Reteach from "../Reteach/Reteach";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
         <Route path="/guided-practice" element={<GuidedPractice/>}></Route>
         <Route path="/independent-practice" element={<IndependentPractice/>}></Route>
         <Route path="/mid-workshop" element={<MidWorkshop/>}></Route>
+        <Route path="/reteach" element={<Reteach/>}></Route>
       </Routes>
     </div>
   )
