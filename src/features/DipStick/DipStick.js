@@ -1,4 +1,8 @@
 import Button from "react-bootstrap/Button";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+
 
 const DipStick = () => {
 
@@ -12,14 +16,36 @@ const DipStick = () => {
     flexBasis: "100%"
   }
 
+  const popover = (
+    <Popover>
+      <Popover.Body>
+        <ButtonGroup>
+        <Button variant="success">Yes</Button>
+        <Button variant="warning">Kinda</Button>
+        <Button variant="danger">No</Button>
+        </ButtonGroup>
+      </Popover.Body>
+    </Popover>
+  )
+
   return (
     <>
     <div style={dipStickStyle}>
+      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
       <Button className="rounded-circle" variant="outline-dark">!</Button>
+      </OverlayTrigger>
+      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
       <Button className="rounded-circle" variant="outline-dark">!</Button>
+      </OverlayTrigger>
+      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
       <Button className="rounded-circle" variant="outline-dark">!</Button>
+      </OverlayTrigger>
+      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
       <Button className="rounded-circle" variant="outline-dark">!</Button>
+      </OverlayTrigger>
+      <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
       <Button className="rounded-circle" variant="outline-dark">!</Button>
+      </OverlayTrigger>
     </div>
     </>
   )
