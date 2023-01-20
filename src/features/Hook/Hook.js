@@ -8,12 +8,11 @@ function Hook() {
     alignItems: "center",
     justifyContent: "center",
     margin: "50px",
-    // flexDirection: "column",
-    gap: "30px"
+    gap: "20px"
   };
 
-  const buttonStyles = {
-    backgroundColor: "#D9BBF9",
+  const nextButtonStyles = {
+    backgroundColor: "#B47AEA",
     borderColor: "black",
     color: "black",
   }
@@ -23,12 +22,19 @@ function Hook() {
     height: "0"
   }
 
+  const quitButton = {
+    flexBasis: "50%"
+  }
+
   return (
     <div style={styles}>
       <h1>HOOK</h1>
       <InfoToast />
       <div style={split}></div>
-      <Button style={buttonStyles} size="lg">SKIP TO NEXT</Button>
+      <Button style={nextButtonStyles} size="lg">SKIP TO NEXT</Button>
+      <div style={split}></div>
+      <div style={quitButton}></div>
+      <Button variant="danger" size="sm">END LESSON</Button>
     </div>
   );
 }
