@@ -18,10 +18,16 @@ function Hook() {
     color: "black",
   }
 
+  const split = {
+    flexBasis: "100%",
+    height: "0"
+  }
+
   return (
     <div style={styles}>
       <h1>HOOK</h1>
       <InfoToast />
+      <div style={split}></div>
       <Button style={buttonStyles} size="lg">SKIP TO NEXT</Button>
     </div>
   );
