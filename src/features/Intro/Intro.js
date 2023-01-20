@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import InfoToast from "../InfoToast/InfoToast";
 import Timer from "../Timer/Timer";
 
-function Hook() {
+const Intro = () => {
   const styles = {
     display: "flex",
     flexWrap: "wrap",
@@ -29,13 +29,13 @@ function Hook() {
 
   return (
     <div style={styles}>
-      <h1>HOOK</h1>
+      <h1>INTRO</h1>
       <div></div>
       <InfoToast />
       <div style={split}></div>
-      <Timer targetTimeMins={3}/>
+      <Timer targetTimeMins={5}/>
       <div style={split}></div>
-      <Button style={nextButtonStyles} size="lg" href="/intro">SKIP TO NEXT</Button>
+      <Button style={nextButtonStyles} size="lg">SKIP TO NEXT</Button>
       <div style={split}></div>
       <div style={quitButton}></div>
       <Button variant="danger" size="sm">END LESSON</Button>
@@ -43,4 +43,4 @@ function Hook() {
   );
 }
 
-export default Hook;
+export default Intro;
