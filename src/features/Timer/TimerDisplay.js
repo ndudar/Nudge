@@ -1,7 +1,15 @@
 const TimerDisplay = ({ value, type, isDanger }) => {
+  const danger = {
+    color: "red"
+  }
+
+  const standard = {
+    color: "black"
+  }
+
   return (
-    <div className={isDanger ? 'countdown danger' : 'countdown'}>
-      <p>{value}</p>
+    <div>
+      <p style={isDanger ? danger : standard}>{value}</p>
       <span>{type}</span>
     </div>
   )

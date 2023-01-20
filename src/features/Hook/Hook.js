@@ -8,8 +8,8 @@ function Hook() {
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
-    margin: "50px",
-    gap: "20px"
+    margin: "40px",
+    gap: "10px"
   };
 
   const nextButtonStyles = {
@@ -30,6 +30,7 @@ function Hook() {
   return (
     <div style={styles}>
       <h1>HOOK</h1>
+      <div></div>
       <InfoToast />
       <div style={split}></div>
       <Timer targetTimeMins={3}/>
