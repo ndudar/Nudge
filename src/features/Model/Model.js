@@ -2,7 +2,7 @@ import Button from "react-bootstrap/Button";
 import InfoToast from "../InfoToast/InfoToast";
 import Timer from "../Timer/Timer";
 
-const Intro = () => {
+const Model = () => {
   const styles = {
     display: "flex",
     flexWrap: "wrap",
@@ -29,13 +29,13 @@ const Intro = () => {
 
   return (
     <div style={styles}>
-      <h1>INTRO</h1>
+      <h1>MODEL</h1>
       <div></div>
       <InfoToast />
       <div style={split}></div>
-      <Timer targetTimeMins={5}/>
+      <Timer targetTimeMins={7}/>
       <div style={split}></div>
-      <Button style={nextButtonStyles} size="lg" href="/model">SKIP TO NEXT</Button>
+      <Button style={nextButtonStyles} size="lg">SKIP TO NEXT</Button>
       <div style={split}></div>
       <div style={quitButton}></div>
       <Button variant="danger" size="sm">END LESSON</Button>
@@ -43,4 +43,4 @@ const Intro = () => {
   );
 }
 
-export default Intro;
+export default Model;
