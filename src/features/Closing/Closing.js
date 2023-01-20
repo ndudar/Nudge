@@ -35,10 +35,10 @@ const Closing = () => {
       <div style={split}></div>
       <Timer targetTimeMins={5}/>
       <div style={split}></div>
-      <Button style={nextButtonStyles} size="lg">SKIP TO NEXT</Button>
+      <Button style={nextButtonStyles} size="lg" href="/reflection">SKIP TO NEXT</Button>
       <div style={split}></div>
       <div style={quitButton}></div>
-      <Button variant="danger" size="sm">END LESSON</Button>
+      <Button variant="danger" size="sm" href="/reflection">END LESSON</Button>
     </div>
   );
 }

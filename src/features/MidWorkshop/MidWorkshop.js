@@ -38,7 +38,7 @@ const MidWorkshop = () => {
       <Button style={nextButtonStyles} size="lg" href="/independent-practice">SKIP TO NEXT</Button>
       <div style={split}></div>
       <div style={quitButton}></div>
-      <Button variant="danger" size="sm">END LESSON</Button>
+      <Button variant="danger" size="sm" href="/reflection">END LESSON</Button>
     </div>
   );
 }
