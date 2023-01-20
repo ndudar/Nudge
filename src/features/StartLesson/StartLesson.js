@@ -18,7 +18,7 @@ function StartLesson() {
 
   return (
     <div style={styles}>
-      <h1>Pocket Coach</h1>
+      <h1>NUDGE</h1>
       <Button style={buttonStyles} size="lg" href="/hook">START LESSON</Button>
     </div>
   );
