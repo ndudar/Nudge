@@ -2,14 +2,14 @@ import Button from "react-bootstrap/Button";
 import InfoToast from "../InfoToast/InfoToast";
 import Timer from "../Timer/Timer";
 
-const GuidedPractice = () => {
+const IndependentPractice = () => {
   const styles = {
     display: "flex",
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
     margin: "40px",
-    gap: "10px"
+    gap: "10px",
   };
 
   const nextButtonStyles = {
@@ -29,13 +29,13 @@ const GuidedPractice = () => {
 
   return (
     <div style={styles}>
-      <h1>GUIDED PRACTICE</h1>
+      <h4>INDEPENDENT PRACTICE</h4>
       <div></div>
       <InfoToast />
       <div style={split}></div>
-      <Timer targetTimeMins={10}/>
+      <Timer targetTimeMins={20}/>
       <div style={split}></div>
-      <Button style={nextButtonStyles} size="lg" href="/independent-practice">SKIP TO NEXT</Button>
+      <Button style={nextButtonStyles} size="lg">SKIP TO NEXT</Button>
       <div style={split}></div>
       <div style={quitButton}></div>
       <Button variant="danger" size="sm">END LESSON</Button>
@@ -43,4 +43,4 @@ const GuidedPractice = () => {
   );
 }
 
-export default GuidedPractice;
+export default IndependentPractice;
