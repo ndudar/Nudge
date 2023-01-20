@@ -1,24 +1,25 @@
+import Button from "react-bootstrap/Button";
+
 const DipStick = () => {
 
   const dipStickStyle = {
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     alignItems: "center",
-    fontWeight: "700",
-    lineHeight: "1.75rem",
-    padding: "1.4rem 1rem .5rem 1rem",
+    padding: ".5rem 1rem .5rem 1rem",
     border: "1px solid #ebebeb",
-    borderRadius: "0.5rem",
-    textDecoration: "none",
-    fontSize: '3rem',
     flexBasis: "100%"
   }
 
   return (
     <>
     <div style={dipStickStyle}>
-      <p>O O O O O</p>
+      <Button className="rounded-circle" variant="outline-dark">!</Button>
+      <Button className="rounded-circle" variant="outline-dark">!</Button>
+      <Button className="rounded-circle" variant="outline-dark">!</Button>
+      <Button className="rounded-circle" variant="outline-dark">!</Button>
+      <Button className="rounded-circle" variant="outline-dark">!</Button>
     </div>
     </>
   )
