@@ -28,13 +28,15 @@ const GuidedPractice = () => {
     flexBasis: "50%"
   }
 
+  //pass timer props for disptick average and paths
+
   return (
     <div style={styles}>
       <h1>GUIDED PRACTICE</h1>
       <div></div>
       <InfoToast />
       <div style={split}></div>
-      <Timer targetTimeMins={10}/>
+      <Timer targetTimeMins={.1}/>
       <p style={{ marginBottom: '0'}}>Check for Understanding</p>
       <DipStick />
       <div style={split}></div>

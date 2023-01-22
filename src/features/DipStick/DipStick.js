@@ -22,7 +22,10 @@ const DipStick = () => {
   const handleClick = (val, newVariant) => {
     target.current.innerHTML = "X";
     target.current.className = `rounded-circle btn btn-${newVariant}`
+    //maybe helper function here for average?
   }
+
+  //function that calculates average for export 
 
   const popover = (
     <Popover target={target.current}>
@@ -61,5 +64,8 @@ const DipStick = () => {
     </>
   )
 }
+
+//export a const of the average data
+
 
 export default DipStick;

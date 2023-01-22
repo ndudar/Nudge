@@ -1,6 +1,8 @@
 import { useTimer } from "./useTimer";
 import TimerDisplay from "./TimerDisplay";
+import Button from "react-bootstrap/Button";
 
+//take in props for average and different paths
 const ExpiredNotice = () => {
   const blockStyle = {
     textAlign: "center",
@@ -11,11 +13,14 @@ const ExpiredNotice = () => {
     fontSize: "1rem",
     color: "red"
   };
+//based on average, path is associated to the next button
+
+const nav = "/independent-practice"
 
   return (
     <div style={blockStyle}>
       <span>Time's Up!!!</span>
-      <p>Move on to next lesson component.</p>
+      <p style={ {color: "black"} }>Move on to the <Button variant="success" href={nav}>next</Button> lesson component.</p>
     </div>
   );
 };
@@ -43,6 +48,8 @@ const ShowTimer = ({ minutes, seconds }) => {
     </div>
   );
 };
+
+//pass in average prop into the expired notice
 
 const Timer = (targetTimeMins) => {
   const [minutes, seconds] = useTimer(targetTimeMins);
